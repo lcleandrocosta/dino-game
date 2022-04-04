@@ -24,16 +24,16 @@ function jump() {
           clearInterval(downInterval);
           isJumping = false;
         } else {
-          position -= 20;
+          position -= 5;
           dino.style.bottom = position + 'px';
         }
       }, 20);
     }else {
       //Subindo
-      position += 20;
+      position += 40;
       dino.style.bottom = position + 'px';
     }
-  }, 20);
+  }, 40);
 }
 
 function createPtero () {
@@ -41,14 +41,14 @@ function createPtero () {
   let pteroPosition = 1000;
   let randomTime = Math.random() * 10000;
 
-  ptero.classList.add('cactus');
+  ptero.classList.add('ptero');
   ptero.style.left = 1000 + 'px';
   background.appendChild(ptero);
 
   let leftInterval = setInterval(() => {
-    if (pteroPosition < -60) {
+    if (pteroPosition < -150) {
       clearInterval(leftInterval);
-      background.removeChild(cactus);
+      background.removeChild(ptero);
     } else if (pteroPosition > 0 && pteroPosition < 60 && position < 60){
       // Game Over
       clearInterval(leftInterval);
