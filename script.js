@@ -4,27 +4,27 @@ let isJumping = false;
 let position = 0;
 
 function handleKeyup(event) {
-  if(event.keyCode === 32) {
-    if (!isJumping) {
-      jump();
-    } 
-  }
+    if(event.keyCode === 32) {
+      if (!isJumping) {
+        jump();
+      } 
+    }
 }
 
 function jump() {
   isJumping = true;
 
   let upInterval = setInterval(() => {
-    if (position >= 200) {
+    if (position >= 500) {
       clearInterval(upInterval);
 
       //Descendo
       let downInterval = setInterval(() => {
-        if (position <= 0) {
+        if (position <= 150) {
           clearInterval(downInterval);
           isJumping = false;
         } else {
-          position -= 5;
+          position -= 20;
           dino.style.bottom = position + 'px';
         }
       }, 20);
@@ -49,12 +49,12 @@ function createPtero () {
     if (pteroPosition < -150) {
       clearInterval(leftInterval);
       background.removeChild(ptero);
-    } else if (pteroPosition > 0 && pteroPosition < 60 && position < 60){
+    } else if (pteroPosition > 0 && pteroPosition < 150 && position < 150){
       // Game Over
       clearInterval(leftInterval);
       document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
     } else {
-      pteroPosition -= 10;
+      pteroPosition -= 20;
       ptero.style.left = pteroPosition + 'px';
     }
   }, 40);
