@@ -5,7 +5,7 @@ body {
 }
 
 .dino {
-  background-image: url(img/dino2.png);
+  background-image: url(img/dino.png);
   bottom: 50px;
   height: 100px;
   position: absolute;
@@ -13,7 +13,7 @@ body {
 }
 
 .cactus {
-  background-image: url(img/ptero2.png);
+  background-image: url(img/ptero.png);
   bottom: 50px;
   height: 100px;
   position: absolute;
@@ -39,7 +39,7 @@ body {
 
 .background {
   animation: sliderigth 2000s infinite linear;
-  background-image: url(img/background2.png);
+  background-image: url(img/background.png);
   background-repeat: repeat-x;
   bottom: 0;
   height: 500px;
