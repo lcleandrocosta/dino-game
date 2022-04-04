@@ -21,11 +21,10 @@ body {
 }
 
 .game-over {
-  color: #035e70;
-  font-family: 'Monoton', arial;
-  font-size: 100px;
-  margin-top: 300px;
-  text-align: center;
+  background-repeat: repeat-x;
+  bottom: 0;
+  height: 100%;
+  width: 100%; 
 }
 
 @keyframes sliderigth {
@@ -39,7 +38,7 @@ body {
 
 .background {
   animation: sliderigth 2000s infinite linear;
-  background-image: url(img/background2.png);
+  background-image: url(img/background.png);
   background-repeat: repeat-x;
   bottom: 0;
   height: 200px;

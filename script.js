@@ -52,7 +52,8 @@ function createPtero () {
     } else if (pteroPosition > 0 && pteroPosition < 150 && position < 150){
       // Game Over
       clearInterval(leftInterval);
-      document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
+      //document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
+      document.body.innerHTML = '<img class="game-over" src="img/background-gameover.png"/>';
     } else {
       pteroPosition -= 20;
       ptero.style.left = pteroPosition + 'px';
