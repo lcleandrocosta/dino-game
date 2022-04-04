@@ -1,5 +1,9 @@
 # Desafio de projeto - Bootcamp Philips Full Stack
 
+![Alt text](img/game-dino.gif)
+
+
+
 ## 👀 Sobre
 
 Desafio do **Bootcamp Philips Fullstack Developer | You Are You**.

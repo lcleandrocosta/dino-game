@@ -55,7 +55,7 @@ function createPtero () {
       //document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
       document.body.innerHTML = '<img class="game-over" src="img/background-gameover.png"/>';
     } else {
-      pteroPosition -= 20;
+      pteroPosition -= 40;
       ptero.style.left = pteroPosition + 'px';
     }
   }, 40);
